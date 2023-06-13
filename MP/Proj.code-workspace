@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../../coding"
+		}
+	],
+	"settings": {
+		"terminal.integrated.cwd": "A:\\coding"
+	}
+}
