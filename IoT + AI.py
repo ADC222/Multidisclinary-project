@@ -107,12 +107,12 @@ init_global_equation()
 while True:
     image_detector()
     time.sleep(5)
-    s1 = random.randint(0,100)
-    s2 = random.randint(0,100)
-    s3 = random.randint(0,100)
-    client.publish("temperature", s1)
-    client.publish("humidity", s2)
-    client.publish("moisture", s3)
+    #s1 = random.randint(0,100)
+    #s2 = random.randint(0,100)
+    #s3 = random.randint(0,100)
+    #client.publish("temperature", s1)
+    #client.publish("humidity", s2)
+    #client.publish("moisture", s3)
     client.publish("prediction", class_name[2:])
     pass
 
