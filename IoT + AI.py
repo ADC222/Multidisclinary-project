@@ -55,8 +55,8 @@ confidence_score = prediction[0][index]
 
 
 # IoT set up
-AIO_USERNAME = "Vijt"
-AIO_KEY = ""
+AIO_USERNAME = "your_AIO_USERNAME"
+AIO_KEY = "your_AIO_KEY"
 global_equation = 'x1 + x2 + x3'
 
 
@@ -92,7 +92,7 @@ def message(client , feed_id , payload):
         global_equation = payload
         print(global_equation)
 
-client = MQTTClient("Vijt", "")
+client = MQTTClient("your_AIO_USERNAME", "your_AIO_KEY")
 
 client.on_connect = connected  #function pointer
 client.on_disconnect = disconnected
