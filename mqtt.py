@@ -5,7 +5,7 @@ import sys
 import requests
 from Adafruit_IO import MQTTClient
 AIO_USERNAME = "Vijt"
-AIO_KEY = "aio_AewK57xB1KIKt2UrA7E80URSSzZ0"
+AIO_KEY = ""
 global_equation = 'x1 + x2 + x3'
 
 
@@ -41,7 +41,7 @@ def message(client , feed_id , payload):
         global_equation = payload
         print(global_equation)
 
-client = MQTTClient("Vijt", "aio_AewK57xB1KIKt2UrA7E80URSSzZ0")
+client = MQTTClient("Vijt", "")
 
 client.on_connect = connected  #function pointer
 client.on_disconnect = disconnected
